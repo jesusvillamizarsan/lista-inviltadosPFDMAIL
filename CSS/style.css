@@ -1,0 +1,253 @@
+
+@font-face {
+    font-family: 'Milanello Free';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Milanello Free'), url('../assets/fonts/MilanelloFree-51Lwv.woff') format('woff');
+    }
+
+body {
+    font-family: "Catamaran", serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+
+.imagenFondo{
+    display: flex;
+    position: fixed;
+    z-index: -10;
+    left: 0;
+   width: 100%;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+
+}
+
+.tituloh1{
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    
+}
+
+.subtituloh4{
+ font-size: 18px;
+ margin-top: 0;
+ margin-bottom: 10px;
+
+}
+
+.azulFont{
+    color: #2A77BE;
+}
+
+
+.rosaFont{
+    color: #BB5384;
+}
+
+h1{
+    color: white;
+    font-family: 'Milanello Free';
+    font-weight: 100;
+    
+}
+
+.imagenFondo img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+    
+}
+
+
+
+
+
+.personas-opciones {
+    margin-left: 20px;
+    display: none;
+}
+
+
+input[type="email"] {
+    width: 100%;
+    height: 20px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+
+
+}
+
+
+input[type="text"],
+input[type="tel"] {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+
+}
+
+.radio-group {
+    display: flex;
+    margin: 15px 0 10px 0;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 24px; /* Tamaño del radio button */
+    height: 24px;
+    min-width:24px;
+    min-height: 24px;
+    border: 2px solid #FF6CAD; /* Borde rosa */
+    border-radius: 50%;
+    background-color: white; /* Fondo blanco */
+    cursor: pointer;
+    position: relative;
+    vertical-align: text-top; /* Alinea con la primera línea del texto */
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+/* Estilo para cuando está seleccionado */
+.radio-group input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px; /* Tamaño del círculo interior */
+    height: 14px;
+    background-color: #FF6CAD; /* Relleno rosa */
+    border-radius: 50%;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.formatoinvi {
+    display: flex;
+    
+    flex-direction: column;
+    background-color: rgba(219, 221, 223, 0.9);
+    border-radius: 10px;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+
+
+}
+
+.emailinvi {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.textoC {
+    text-align: center;
+    line-height: 22px;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+.headtext h4:nth-child(3) {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+
+}
+.headtext h4:nth-child(4) {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.imputText{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+button {
+    background-image: url('../assets/CONFIRM\ BUTTON\ TEXT.png'); /* Ruta de la imagen */
+    background-color: transparent;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el botón */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    width: 200px; /* Ancho del botón (ajústalo según la imagen) */
+    height: 150px; /* Alto del botón (ajústalo según la imagen) */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    text-indent: -9999px; /* Oculta el texto del botón */
+    overflow: hidden; /* Asegura que no se vea el texto */
+}
+
+button:focus {
+    outline: none; /* Elimina el contorno al hacer clic */
+}
+
+input::placeholder{
+    font-family: "Catamaran", serif;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.4;
+}
+
+.nombreTelefono {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.l50 {
+
+
+    width: 46%;
+
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+.camposForm{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-right: 3%;
+
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        transform: scale(0.9);
+    }
+}
