@@ -28,7 +28,7 @@ try {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url(./assets/FONDO\ FORMULARIO\ DESKTOP.png);
+            background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
             display: flex;
